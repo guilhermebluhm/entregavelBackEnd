@@ -3,6 +3,7 @@ package br.java.EntregavelBackEnd.Controller;
 import br.java.EntregavelBackEnd.Model.Aluno;
 import br.java.EntregavelBackEnd.Model.DTO.AlunoDTO;
 import br.java.EntregavelBackEnd.Service.AlunoService;
+import br.java.EntregavelBackEnd.Service.Impl.AlunoImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,7 +13,7 @@ import java.util.List;
 public class AlunoController {
 
     @Autowired
-    private AlunoService aluno_service;
+    private AlunoImpl aluno_service;
 
     @GetMapping("/listar")
     public List<AlunoDTO> listAllStudents(){
