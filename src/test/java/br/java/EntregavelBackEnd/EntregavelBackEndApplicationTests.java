@@ -8,6 +8,7 @@ class EntregavelBackEndApplicationTests {
 
 	@Test
 	void contextLoads() {
+		EntregavelBackEndApplication.main(new String[]{});
 	}
 
 }
